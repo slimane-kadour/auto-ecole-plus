@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>YUI Calendar : Untitled 2</title>
+<link type='text/css' href='YUI/2.8.2r1/build/calendar/assets/skins/sam/calendar.css' rel='stylesheet'/>
+<script type='text/javascript' src='YUI/2.8.2r1/build/yahoo-dom-event/yahoo-dom-event.js'></script>
+<script type='text/javascript' src='YUI/2.8.2r1/build/calendar/calendar-min.js'></script>
+<style type="text/css">
+/* CALENDAR BOUNDING BOX */ 
+.yui-skin-sam #OAWidget { 
+	background-color:#f2f2f2; 
+	border:1px solid #808080; 
+	padding:10px;
+} 
+
+/* TITLE BAR */
+.yui-skin-sam #OAWidget .title {
+	border-bottom:1px solid #cccccc;
+	color:#000000;
+}
+
+/* WEEKDAY HEADER ROW */
+.yui-skin-sam #OAWidget .calweekdayrow {
+	height:2em;
+}
+
+/* WEEKDAY (Su, Mo, Tu...) HEADER CELLS */
+.yui-skin-sam #OAWidget .calweekdaycell {
+	color:#000000;
+	font-weight:bold;
+}
+
+/* WEEK NUMBERS (ROW HEADERS/FOOTERS) */
+.yui-skin-sam #OAWidget .calrowhead, .yui-skin-sam .yui-calendar .calrowfoot {
+	color:#a6a6a6;
+	font-size:85%;
+	font-style:normal;
+	font-weight:normal;
+}
+
+/* NORMAL CELLS */
+.yui-skin-sam #OAWidget td.calcell {
+	border:1px solid #cccccc;
+	background:#ffffff;
+	height:1.6em;
+	line-height:1.6em; /* set line height equal to cell height to center vertically */
+}
+
+/* LINK INSIDE NORMAL CELLS */
+.yui-skin-sam #OAWidget td.calcell a {
+	color:#0066cc;
+}
+
+/* TODAY'S DATE */
+.yui-skin-sam #OAWidget td.calcell.today { 
+	background-color:#f2f2f2; 
+} 
+.yui-skin-sam #OAWidget td.calcell.today a {
+	background-color:#ffffff;
+}
+
+/* SELECTED DATE */
+.yui-skin-sam #OAWidget td.calcell.selected a {
+	background-color:#0066cc;
+	color:#000000;
+}
+
+/* HOVER DATE */
+.yui-skin-sam #OAWidget td.calcell.calcellhover a {
+	background-color:#426fd9;
+	color:#ffffff;
+}
+
+/* CalendarNavigator */
+/* NAVIGATOR MASK */
+.yui-skin-sam #OAWidget .yui-cal-nav-mask {
+	background-color:#000000;
+	opacity:0.25;
+	*filter:alpha(opacity=25); /* IE */
+}
+
+/* NAVIGATOR BOUNDING BOX */
+.yui-skin-sam #OAWidget .yui-cal-nav {
+	border:1px solid #808080;
+	background-color:#f2f2f2;
+}
+</style>
+</head>
+
+<body>
+<div id="OAWidget"></div>
+<script type="text/javascript">
+document.body.className += " yui-skin-sam";
+YAHOO.namespace("widget.Calendar");
+
+YAHOO.init_OAWidget = function() {
+  var oCalendar_OAWidget = new YAHOO.widget.Calendar("oCalendar_OAWidget","OAWidget", 
+       {selected: "04/27/2014",
+        mindate: null,
+  			maxdate: null,
+  			title: "Prochain Examen",
+        close: false,
+  			iframe: true,
+  			multi_select: false,
+  			navigator: false,
+  			show_weekdays: true,
+        locale_weekdays: "short",
+  			start_weekday: 0,
+  			show_week_header: false,
+  			show_week_footer: false,
+  			hide_blank_weeks: false }
+  );
+  oCalendar_OAWidget.render();
+}
+YAHOO.util.Event.onDOMReady(YAHOO.init_OAWidget);
+</script>
+</body>
+</html>

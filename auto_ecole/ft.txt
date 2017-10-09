@@ -1,0 +1,61 @@
+ <h2 align="center">  Liste des candidats qui vont passé l'examen </h2>						
+                            <hr/>
+						  
+                <table cellspacing='0' > 
+	                <tr>
+					    <th>Numéro_du_dossier</th>
+						<th>Nom et prenom</th>
+						<th>Type_de_permis</th>
+						<th>Numéro_de_téléphone</th>
+						<th>Num de la carte d'identité</th>
+					</tr>
+					<tr>
+					    <td>54854</td>
+						<td>Boudaoud wafaa</td>
+						<td>permis B</td>
+						<td>0669576908</td>
+						<td>122548</td>
+					</tr>
+					<tr>
+					    <td>54854</td>
+						<td>Boudaoud wafaa</td>
+						<td>permis B</td>
+						<td>0669576908</td>
+						<td>122548</td>
+					</tr>
+				</table></br>
+				</br>
+			   
+			   <h2 align="center">  Messages et Rendez Vous d'aujourd'hui </h2>
+			   <hr/>
+			   <div class="milieu">
+				<table cellspacing='0' > 
+	                <tr>
+					    <th>Remarque et rendez-vous</th>
+						<th>Heure</th>
+					</tr>
+					<tr>
+					    <td>Prochain rendez vous le 22/04/2014</td>
+						<td>15h30</td>
+					</tr>
+					<tr>
+					    <td>vous avez un rendez vous le :</td>
+						<td>à :</td>
+				    </tr>
+				</table>
+				</div>
+				</br>
+				
+				
+				
+				
+				/*   liste message */
+				<section id="espPerso3" class="bloc">
+                        
+			            <h3>Liste des messages reçue</h3>
+	                    <div class="droite">
+						<h4> Message <span class="droit">Heure</span> </h4> </br>
+						<p> boudaoud<span class="droit">15h30</span> </p> 
+						<p> <span class="droit"></span> </p>
+						</div>
+					</section>
